@@ -6,6 +6,7 @@
       "development": {
          "developmentClient": true,
          "distribution": "internal",
+         "image": "latest",
          "android": {
             "image": "latest",
             "resourceClass": "medium"
@@ -16,8 +17,7 @@
          }
       },
       "preview": {
-         "distribution": "internal",
-         "image": "latest"
+         "distribution": "internal"
       },
       "production": {}
    },
