@@ -7,14 +7,17 @@
          "developmentClient": true,
          "distribution": "internal",
          "android": {
-            "image": "latest"
+            "image": "latest",
+            "resourceClass": "medium"
          },
          "ios": {
-            "image": "latest"
+            "image": "latest",
+            "resourceClass": "medium"
          }
       },
       "preview": {
-         "distribution": "internal"
+         "distribution": "internal",
+         "image": "latest"
       },
       "production": {}
    },
