@@ -5,7 +5,7 @@ export default function App() {
    return (
       <View style={styles.container}>
          <Text>Test trigger github actions</Text>
-         <StatusBar style="auto" />
+         <Text>Test ios github action</Text>
       </View>
    );
 }
