@@ -18,7 +18,17 @@
       "preview": {
          "distribution": "internal"
       },
-      "production": {}
+      "production": {
+         "distribution": "internal",
+         "android": {
+            "image": "latest",
+            "resourceClass": "medium"
+         },
+         "ios": {
+            "image": "latest",
+            "resourceClass": "medium"
+         }
+      }
    },
    "submit": {
       "production": {}
