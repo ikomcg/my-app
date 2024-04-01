@@ -4,7 +4,7 @@ import About from "../screen/About";
 
 const Stack = createStackNavigator();
 
-export default function RootStack() {
+export default function MainStack() {
    return (
       <Stack.Navigator>
          <Stack.Screen

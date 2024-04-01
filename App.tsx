@@ -1,11 +1,13 @@
 import { createStaticNavigation } from "@react-navigation/native";
-import RootStack from "./routes/Home";
+import Navigator from "./routes";
 import { NavigationContainer } from "@react-navigation/native";
-
+import { SafeAreaProvider } from "react-native-safe-area-context";
 export default function App() {
    return (
       <NavigationContainer>
-         <RootStack />
+         {/* <SafeAreaProvider> */}
+            <Navigator />
+         {/* </SafeAreaProvider> */}
       </NavigationContainer>
    );
 }
