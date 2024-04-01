@@ -9,5 +9,6 @@ export default function App() {
             <Navigator />
          {/* </SafeAreaProvider> */}
       </NavigationContainer>
+
    );
 }
