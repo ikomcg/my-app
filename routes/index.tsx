@@ -8,34 +8,34 @@ import Login from "../screen/Login";
 
 export default function RootNavigator() {
    const [isLogIn, setIsLogIn] = useState(false);
-   // const [appIsReady, setAppIsReady] = useState(false);
+   const [appIsReady, setAppIsReady] = useState(false);
 
-   // useEffect(() => {
-   //    async function prepare() {
-   //       try {
-   //          await new Promise((resolve) => setTimeout(resolve, 1000));
-   //       } catch (e) {
-   //          console.warn(e);
-   //       } finally {
-   //          setAppIsReady(true);
-   //       }
-   //    }
+   useEffect(() => {
+      async function prepare() {
+         try {
+            await new Promise((resolve) => setTimeout(resolve, 3000));
+         } catch (e) {
+            console.warn(e);
+         } finally {
+            setAppIsReady(true);
+         }
+      }
 
-   //    prepare();
-   // }, []);
+      prepare();
+   }, []);
 
-   // const onLayoutRootView = useCallback(async () => {
-   //    if (appIsReady) {
-   //       await SplashScreen.hideAsync();
-   //    }
-   // }, [appIsReady]);
+   const onLayoutRootView = useCallback(async () => {
+      if (appIsReady) {
+         await SplashScreen.hideAsync();
+      }
+   }, [appIsReady]);
 
-   // if (!appIsReady) {
-   //    return null;
-   // }
+   if (!appIsReady) {
+      return null;
+   }
 
    return (
-      <View style={{ flex: 1 }} >
+      <View style={{ flex: 1 }}>
          <StatusBar style="auto" />
          {isLogIn ? <MainStack /> : <Login />}
       </View>
